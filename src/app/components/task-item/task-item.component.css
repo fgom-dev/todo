@@ -1,0 +1,35 @@
+.taskItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.taskItem:nth-child(-n + 1) {
+  margin-top: .75rem;
+}
+
+.taskItem p {
+  display: inline;
+  margin-right: auto;
+  max-width: 40rem;
+  color: var(--gray-300);
+}
+
+.taskCompleted {
+  text-decoration: line-through;
+}
+
+.btnDelete {
+  background: transparent;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.taskItem mat-checkbox {
+  margin-right: .2rem;
+}

@@ -1,0 +1,18 @@
+<header class="header">
+  <mat-toolbar class="wrapper">
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button (click)="editTodos()" mat-menu-item>Editar ToDo's</button>
+    </mat-menu>
+
+    <span class="spacer"></span>
+    <span>To-Do</span>
+    <span class="spacer"></span>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+</header>

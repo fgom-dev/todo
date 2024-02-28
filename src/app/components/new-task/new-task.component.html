@@ -1,0 +1,12 @@
+<form [formGroup]="form" class="newTask">
+  <input
+    type="text"
+    placeholder='Adicione uma nova Task'
+    value=''
+    required
+    formControlName="taskTitle"
+  />
+  <button mat-raised-button color="primary" (click)="add()">Criar <mat-icon fontIcon="add_circle_outline"></mat-icon></button>
+</form>
+
+

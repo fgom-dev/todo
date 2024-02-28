@@ -1,0 +1,28 @@
+.todoList {
+  margin-top: 4rem;
+}
+
+.contentEmpty {
+  padding: 4rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  color: var(--gray-300);
+}
+
+.editModeButtons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+
+

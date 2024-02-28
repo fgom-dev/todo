@@ -1,0 +1,7 @@
+<div class="taskItem">
+  <mat-checkbox color="primary" checked="{{task.isComplete}}" (change)="completeTask(task.id)"></mat-checkbox>
+  <p [ngClass]="{taskCompleted: task.isComplete}">{{task.title}}</p>
+  <button (click)="delete(task.id)" class="btnDelete" mat-icon-button matTooltip="Excluir" aria-label="Example icon-button with a heart icon">
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>

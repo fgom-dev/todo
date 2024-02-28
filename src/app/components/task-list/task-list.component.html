@@ -1,0 +1,24 @@
+<div class=taskList>
+  <app-new-task></app-new-task>
+  <header>
+    <div class="tasksCreated">
+      <strong>Tarefas criadas</strong>
+      <span>{{tasks$?.length}}</span>
+    </div>
+
+    <div class="tasksCompleted">
+      <strong>Concluídas</strong>
+      <span>{{completedTasks$}} de {{tasks$?.length}}</span>
+    </div>
+  </header>
+
+  <app-task-item (completedTasksEvent)="addCompletedTasks()" *ngFor="let task of tasks$" [task]="task"></app-task-item>
+
+  <div *ngIf="tasks$?.length == 0" class="contentEmpty">
+    <img ngSrc="assets/clipboard.svg" alt="" height="56" width="56"/>
+    <div>
+      <strong>Você ainda não tem tasks cadastradas</strong>
+      <p>Crie tasks e organize seus itens a fazer</p>
+    </div>
+  </div>
+</div>

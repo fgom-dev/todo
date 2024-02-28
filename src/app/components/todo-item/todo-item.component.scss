@@ -1,0 +1,46 @@
+.todoItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  mat-expansion-panel {
+    background-color: transparent;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  mat-expansion-panel-header {
+    display: flex;
+    align-items: center;
+  }
+  mat-panel-title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 1.2rem;
+  }
+
+}
+
+.todoItem:nth-child(-n + 1) {
+  margin-top: .75rem;
+}
+
+.todoItem p {
+  display: inline;
+  margin-right: auto;
+  max-width: 40rem;
+  color: var(--gray-300);
+}
+
+.btnDelete {
+  background: transparent;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+}

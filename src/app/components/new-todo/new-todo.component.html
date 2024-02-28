@@ -1,0 +1,12 @@
+<form [formGroup]="form" class="newTodo">
+  <input
+    type="text"
+    placeholder='Adicione um novo To-Do'
+    formControlName="todoTitle"
+  />
+<!--  <small *ngIf="form.controls['title'].invalid && !form.controls['title'].pristine">-->
+<!--    Este campo deve conter entre 3 e 60caracteres<br>-->
+<!--  </small>-->
+<!--  <button mat-raised-button color="primary" [disabled]="form.invalid" (click)="add()">Criar <mat-icon fontIcon="add_circle_outline"></mat-icon></button>-->
+  <button mat-raised-button color="primary" (click)="add()">Criar <mat-icon fontIcon="add_circle_outline"></mat-icon></button>
+</form>
